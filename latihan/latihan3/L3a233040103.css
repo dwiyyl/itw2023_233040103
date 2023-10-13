@@ -1,25 +1,18 @@
-* {
+body {
     background-color: aqua;
-    font-family: georgia, "Times New Roman", Times, serif;
-    text-align: justify;
-}
-
-h1 {
-    text-align: left;
-    font-family: comic sans Ms;
+    font-family: Georgia;
+  }
+  
+  h1 {
+    font-family: Comic Sans MS;
+    color: darkblue;
     font-size: 60px;
-    color: darkblue
-}
-
-h4 {
-    text-align: right;
-    font-style: oblique;
-}
-
-.paragraf1 {
+  }
+  
+  h4 {
+    text-align: end;
+  }
+  
+  p {
     text-align: justify;
-}
-
-.paragraf2 {
-    text-align: justify;
-}
+  }
