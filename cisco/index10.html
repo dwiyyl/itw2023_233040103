@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Universitas Pasundan</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #f4f4f4;
+      }
+      .container {
+        display: flex;
+        width: 80%;
+        max-width: 1200px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+      }
+
+      .left {
+        flex: 1;
+        background-image: url("img/gambar\ kampus\ unpas\ setbud.jpg"); /* Ganti dengan nama file lokal gambar */
+        background-size: cover;
+        background-position: center;
+        position: relative;
+      }
+
+      .left::after {
+        content: "SELAMAT DATANG\nSITU AKADEMIK 2.0\nUNIVERSITAS PASUNDAN";
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        color: #fff;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.5;
+        white-space: pre;
+      }
+
+      .right {
+        flex: 1;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .logo {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .logo img {
+        width: 100px;
+      }
+
+      h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+      }
+
+      .form-group {
+        margin-bottom: 15px;
+      }
+
+      .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+
+      .form-group input {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+
+      .form-group input:focus {
+        outline: none;
+        border-color: #007bff;
+      }
+
+      .btn {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #fff;
+        background-color: #007bff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .btn:hover {
+        background-color: #0056b3;
+      }
+
+      .extra-links {
+        text-align: center;
+        margin-top: 15px;
+      }
+
+      .extra-links a {
+        color: #007bff;
+        text-decoration: none;
+      }
+
+      .extra-links a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Bagian kiri dengan gambar -->
+      <div class="left"></div>
+
+      <!-- Bagian kanan dengan form login -->
+      <div class="right">
+        <div class="logo">
+          <img src="img/unpas.png" alt="Logo Universitas Pasundan" />
+        </div>
+        <h2>Masuk dan Verifikasi</h2>
+        <p style="text-align: center; margin-bottom: 20px; color: #666">Nikmati kemudahan sistem autentikasi tunggal untuk mengakses semua layanan dengan satu akun.</p>
+
+        <form>
+          <div class="form-group">
+            <label for="email">Email/akun pengguna</label>
+            <input type="email" id="email" placeholder="Masukkan email/NIM/NIP/username" />
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Masukkan password" />
+          </div>
+          <button type="submit" class="btn">Masuk</button>
+        </form>
+
+        <div class="extra-links">
+          <a href="#">Lupa kata sandi?</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

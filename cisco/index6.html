@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        list-style: none;
+        scroll-behavior: smooth;
+        font-family: "Poppins", sans-serif;
+      }
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #c94525; /* Warna merah sesuai */
+        padding: 10px 20px;
+      }
+      .logo-container {
+        display: flex;
+        align-items: center;
+        margin-left: 50px;
+      }
+      .logo img {
+        height: 70px;
+        right: 30px;
+      }
+      .navlist {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+      }
+      .navlist li a {
+        text-decoration: none;
+        color: white;
+        font-size: 1rem;
+        transition: color 0.3s ease;
+      }
+      .cta-button {
+        background-color: #3dbf4e; /* Warna hijau untuk tombol */
+        color: white;
+        padding: 10px 15px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+      }
+      .cta-button:hover {
+        background-color: #32a045; /* Warna hijau lebih gelap saat hover */
+      }
+      /*  */
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: center;
+      }
+      .title {
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 20px;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        justify-content: center;
+      }
+      .card {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        text-align: center;
+        transition: transform 0.3s;
+      }
+      .card:hover {
+        transform: translateY(-5px);
+      }
+      .program {
+        font-size: 16px;
+        font-weight: bold;
+        color: #333;
+        margin-top: 10px;
+      }
+      /* body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+      } */
+      /* .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+      } */
+
+      .card {
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        text-align: left;
+        transition: transform 0.3s ease;
+      }
+
+      .card:hover {
+        transform: scale(1.05);
+      }
+
+      .card img {
+        width: 100%;
+        height: 70px;
+        object-fit: cover;
+      }
+
+      .card h3 {
+        font-size: 1.2rem;
+        color: #c94525; /* Warna utama */
+        margin: 15px;
+      }
+
+      .card p {
+        font-size: 0.9rem;
+        color: #666;
+        margin: 0 15px 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo-container">
+        <a href="#" class="logo">
+          <img src="img/unpas-bg-2.png" alt="Logo" />
+        </a>
+      </div>
+      <ul class="navlist">
+        <li><a href="#beranda" class="active">Beranda</a></li>
+        <li><a href="#pendaftaran">Pendaftaran</a></li>
+        <li><a href="#kenali-ft">Kenali FT</a></li>
+        <li><a href="#program-studi">Program Studi</a></li>
+        <li><a href="#mahasiswa">Mahasiswa</a></li>
+      </ul>
+      <a href="#daftar-kuliah" class="cta-button">Daftar Kuliah</a>
+    </header>
+
+    <div class="container">
+      <div class="title">Program Studi Fakultas Teknik UNPAS</div>
+
+      <div class="grid">
+        <div class="card">
+          <img src="img/logo-if.png" alt="Teknik Industri" class="logo" />
+          <div class="program">Teknik Industri</div>
+        </div>
+        <div class="card">
+          <img src="logo_teknologi_pangan.png" alt="Teknologi Pangan" class="logo" />
+          <div class="program">Teknologi Pangan</div>
+        </div>
+        <div class="card">
+          <img src="logo_teknik_mesin.png" alt="Teknik Mesin" class="logo" />
+          <div class="program">Teknik Mesin</div>
+        </div>
+        <div class="card">
+          <img src="logo_teknik_informatika.png" alt="Teknik Informatika" class="logo" />
+          <div class="program">Teknik Informatika</div>
+        </div>
+        <div class="card">
+          <img src="logo_teknik_lingkungan.png" alt="Teknik Lingkungan" class="logo" />
+          <div class="program">Teknik Lingkungan</div>
+        </div>
+        <div class="card">
+          <img src="logo_pwk.png" alt="Perencanaan Wilayah dan Kota" class="logo" />
+          <div class="program">Perencanaan Wilayah dan Kota (PWK)</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

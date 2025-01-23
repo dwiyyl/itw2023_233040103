@@ -1,0 +1,234 @@
+/* Reset */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+  
+  
+  /* Navbar Styling */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #C94525; /* Warna merah sesuai */
+    padding: 10px 20px;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+  }
+  
+  .logo img {
+    height: 70px; 
+    right: 30px;
+  }
+  
+  .logo span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .navlist {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navlist li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .navlist li a.active,
+  .navlist li a:hover {
+    --color: #FFD700; /* Warna kuning saat hover/active */
+  }
+  
+  .cta-button {
+    background-color: #3DBF4E; /* Warna hijau untuk tombol */
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #32a045; /* Warna hijau lebih gelap saat hover */
+  }
+
+  /*  */
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.program {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+
+  /*  */
+  /*  */
+  /*  */
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+  }
+  
+  .beranda {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 50px 10%;
+    height: 500px;
+  }
+  
+  .beranda-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .beranda-text {
+    max-width: 50%;
+  }
+  
+  .beranda-text h1 {
+    font-size: 2.5rem;
+    color: #c94525; /* Warna utama */
+    margin-bottom: 20px;
+  }
+  
+  .beranda-text p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  .btn-primary {
+    display: inline-block;
+    background-color: #3dbf4e;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #32a045;
+  }
+  
+  .beranda-image img {
+    width: 450px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  } 
+  .program-studi {
+    padding: 50px 10%;
+    background-color: #f8f9fa;
+    text-align: center;
+  }
+  
+  .program-studi h2 {
+    font-size: 2rem;
+    color: #c94525; /* Warna utama */
+    margin-bottom: 10px;
+  }
+  
+  .program-studi p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 40px;
+  }
+  
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: left;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .card h3 {
+    font-size: 1.2rem;
+    color: #c94525; /* Warna utama */
+    margin: 15px;
+  }
+  
+  .card p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0 15px 15px;
+  } 

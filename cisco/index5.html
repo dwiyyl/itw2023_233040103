@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selamat Datang Peserta Didik Baru</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+        color: #333;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+      }
+
+      .banner {
+        background-color: #1f3c88;
+        color: white;
+        padding: 40px 20px;
+        text-align: center;
+        position: relative;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      .banner::before,
+      .banner::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 100px;
+        height: 100%;
+        background-color: #f7b500;
+      }
+
+      .banner::before {
+        left: -50px;
+        transform: rotate(20deg);
+      }
+
+      .banner::after {
+        right: -50px;
+        transform: rotate(-20deg);
+      }
+
+      .banner h1 {
+        font-size: 48px;
+        font-weight: bold;
+        margin: 0;
+      }
+
+      .banner p {
+        font-size: 18px;
+        margin: 10px 0 0;
+      }
+
+      .banner .academic-year {
+        font-size: 24px;
+        font-weight: bold;
+        color: #f7b500;
+        margin: 15px 0;
+        display: inline-block;
+        padding: 5px 15px;
+        background-color: white;
+        border-radius: 20px;
+      }
+
+      .footer {
+        background-color: #1f3c88;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        font-size: 14px;
+      }
+
+      .footer a {
+        color: #f7b500;
+        text-decoration: none;
+      }
+
+      .footer a:hover {
+        text-decoration: underline;
+      }
+
+      .container {
+        text-align: center;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="banner">
+      <h1>SELAMAT DATANG</h1>
+      <h1>MAHASISWA BARU </h1>
+      <h2>TEKNIK INFORMATIKA</h2>
+    </p>
+      <div class="academic-year">Tahun Ajaran 2025/2026</div>
+      <p>"Smart, Endurance, Teamwork"</p>
+    </div>
+
+    <div class="footer">
+      <p>© 2025 Fakultas Teknik UNPAS | <a href="#">www.unpas.ac.id</a></p>
+    </div>
+  </body>
+</html>

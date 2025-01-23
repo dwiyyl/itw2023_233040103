@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tampilan Website Ruang Informasi</title>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+      list-style: none;
+      scroll-behavior: smooth;
+      font-family: "Poppins", sans-serif;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #c94525; /* Warna merah sesuai */
+      padding: 10px 20px;
+    }
+    .logo-container {
+      display: flex;
+      align-items: center;
+      margin-left: 50px;
+    }
+    .logo img {
+      height: 70px;
+      right: 30px;
+    }
+    .navlist {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    .navlist li a {
+      text-decoration: none;
+      color: white;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+    .cta-button {
+      background-color: #3dbf4e; /* Warna hijau untuk tombol */
+      color: white;
+      padding: 10px 15px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    .cta-button:hover {
+      background-color: #32a045; /* Warna hijau lebih gelap saat hover */
+    }
+    /*  */
+    .program-studi {
+      padding: 50px 10%;
+      background-color: #f8f9fa;
+      text-align: center;
+    }
+    .program-studi h2 {
+      font-size: 2rem;
+      color: #c94525; /* Warna utama */
+      margin-bottom: 10px;
+    }
+    .program-studi p {
+      font-size: 1rem;
+      color: #333;
+      margin-bottom: 40px;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      text-align: left;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin: 15px auto;
+      display: block;
+    }
+    .card h3 {
+      font-size: 1.2rem;
+      color: #c94525; /* Warna utama */
+      margin: 15px;
+    }
+    .card p {
+      font-size: 0.9rem;
+      color: #666;
+      margin: 0 15px 15px;
+    }
+  </style>
+  <body>
+    <header class="navbar">
+      <div class="logo-container">
+        <a href="#" class="logo">
+          <img src="img/unpas-bg-2.png" alt="Logo" />
+        </a>
+      </div>
+      <ul class="navlist">
+        <li><a href="#beranda" class="active">Beranda</a></li>
+        <li><a href="#pendaftaran">Pendaftaran</a></li>
+        <li><a href="#kenali-ft">Kenali FT</a></li>
+        <li><a href="#program-studi">Program Studi</a></li>
+        <li><a href="#mahasiswa">Mahasiswa</a></li>
+      </ul>
+      <a href="#daftar-kuliah" class="cta-button">Daftar Kuliah</a>
+    </header>
+
+    <section class="program-studi" id="program-studi">
+      <h2>Program Studi</h2>
+      <p>Pilih program studi yang sesuai dengan minat dan bakat Anda di Fakultas Teknik Universitas Pasundan.</p>
+      <div class="cards">
+        <div class="card">
+          <img src="img/industri (1).png" alt="Teknik Industri" />
+          <h3>Teknik Industri</h3>
+          <p>Fokus pada efisiensi dan sistem industri modern.</p>
+        </div>
+        <div class="card">
+          <img src="img/pangan (1).png" alt="Teknik Pangan" />
+          <h3>Teknologi Pangan</h3>
+          <p>Fokus pada ilmu dan teknologi dalam pengolahan bahan pangan.</p>
+        </div>
+        <div class="card">
+          <img src="img/mesin (1).png" alt="Teknik Mesin" />
+          <h3>Teknik Mesin</h3>
+          <p>Mengembangkan teknologi mekanik dan otomasi.</p>
+        </div>
+        <div class="card">
+          <img src="img/informatika.png" alt="Teknik Informatika" />
+          <h3>Teknik Informatika</h3>
+          <p>Fokus pada pengembangan perangkat lunak dan teknologi informasi.</p>
+        </div>
+        <div class="card">
+          <img src="img/lingkungan (1).png" alt="Teknik Lingkungan" />
+          <h3>Teknik Lingkungan</h3>
+          <p>Mempelajari tentang perlindungan dan pengelolaan lingkungan hidup.</p>
+        </div>
+        <div class="card">
+          <img src="img/pwk.png" alt="PWK" />
+          <h3>Perencanaan Wilayah & Kota</h3>
+          <p>Fokus pada perencanaan ruang, pengembangan kota dan wilayah.</p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

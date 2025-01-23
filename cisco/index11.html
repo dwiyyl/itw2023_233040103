@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login UNPAS</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f8f8f8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .container {
+        display: flex;
+        width: 80%;
+        max-width: 1200px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: hidden;
+        background-color: white;
+      }
+      .image-section {
+        flex: 1;
+        background-image: url("https://via.placeholder.com/600x800"); /* Ganti dengan gambar gedung */
+        background-size: cover;
+        background-position: center;
+      }
+      .form-section {
+        flex: 1;
+        padding: 40px;
+      }
+      .form-section h1 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+        color: #444;
+      }
+      .form-section p {
+        font-size: 1rem;
+        color: #666;
+        margin-bottom: 30px;
+      }
+      .form-group {
+        margin-bottom: 15px;
+      }
+      label {
+        display: block;
+        font-size: 0.9rem;
+        color: #333;
+        margin-bottom: 5px;
+      }
+      input[type="text"],
+      input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        font-size: 0.9rem;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+      }
+      button {
+        width: 100%;
+        padding: 10px;
+        font-size: 1rem;
+        background-color: #0066cc;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #005bb5;
+      }
+      .google-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        border: 1px solid #ddd;
+        margin-bottom: 20px;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+      .google-button img {
+        height: 20px;
+        margin-right: 10px;
+      }
+      .forgot-password {
+        text-align: right;
+        margin-top: 10px;
+      }
+      .forgot-password a {
+        color: #0066cc;
+        text-decoration: none;
+      }
+      .forgot-password a:hover {
+        text-decoration: underline;
+      }
+      footer {
+        margin-top: 20px;
+        font-size: 0.8rem;
+        color: #999;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="image-section"></div>
+      <div class="form-section">
+        <h1>Masuk dan Verifikasi</h1>
+        <p>Baru! Nikmati kemudahan sistem autentikasi tunggal untuk mengakses semua layanan dengan satu akun.</p>
+        <div class="google-button">
+          <img src="https://via.placeholder.com/20" alt="Google Icon" />
+          Masuk dengan Google
+        </div>
+        <form>
+          <div class="form-group">
+            <label for="email">Email/akun pengguna</label>
+            <input type="text" id="email" placeholder="Masukkan email/NIM/NIP/username" />
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Masukkan password" />
+          </div>
+          <div class="forgot-password">
+            <a href="#">Lupa kata sandi?</a>
+          </div>
+          <button type="submit">Masuk</button>
+        </form>
+        <footer>Powered by SEVIMA Educational Platform for Universities</footer>
+      </div>
+    </div>
+  </body>
+</html>

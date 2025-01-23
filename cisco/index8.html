@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teknik Informatika UNPAS</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, sans-serif;
+      }
+      /* Navbar styling */
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff;
+        padding: 10px 30px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+      .navbar .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .navbar .logo img {
+        height: 50px;
+        margin-right: 10px;
+      }
+      .navbar .logo span {
+        font-weight: bold;
+        font-size: 15px;
+        color: #333;
+      }
+      .navbar .menu {
+        display: flex;
+        gap: 40px;
+      }
+      .navbar .menu a {
+        text-decoration: none;
+        color: #333;
+        font-size: 16px;
+        font-weight: bold;
+        transition: color 0.3s ease;
+      }
+      .navbar .menu a:hover {
+        color: #4caf50;
+      }
+      /* Main content styling */
+      .content {
+        display: flex;
+        padding: 20px;
+        background-color: #f9f9f9;
+      }
+      .content .image {
+        flex: 1;
+        text-align: center;
+      }
+      .content .image img {
+        width: 250px;
+        border-radius: 10px;
+      }
+      .content .text {
+        flex: 2;
+        padding: 20px;
+      }
+      .content .text h1 {
+        color: #333;
+        margin-bottom: 10px;
+      }
+      .content .text p {
+        color: #555;
+        line-height: 1.6;
+      }
+      .content .text .quote {
+        margin-top: 20px;
+        font-style: italic;
+        color: #777;
+      }
+      /* Vision Section Styling */
+      .vision {
+        display: flex;
+        justify-content: space-around;
+        padding: 40px 20px;
+      }
+      .vision .card {
+        flex: 1;
+        margin: 0 10px;
+        padding: 20px;
+        text-align: center;
+        border-radius: 10px;
+        color: #000;
+      }
+      .vision .card:nth-child(1) {
+        background-color: #ffeb3b;
+      }
+      .vision .card:nth-child(2) {
+        background-color: #ff9800;
+      }
+      .vision .card:nth-child(3) {
+        background-color: #4caf50;
+      }
+      .vision .card h2 {
+        margin-bottom: 15px;
+        font-size: 18px;
+      }
+      .vision .card p {
+        line-height: 1.6;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">
+        <img src="img/LogoIFUnpas.png" alt="Logo Teknik Informatika" />
+        <span>TEKNIK INFORMATIKA UNPAS</span>
+      </div>
+      <div class="menu">
+        <a href="#">Program Studi</a>
+        <a href="#">Prestasi Mahasiswa</a>
+        <a href="#">Akademik</a>
+        <a href="#">Pengabdian & Penelitian</a>
+        <a href="#">Civitas</a>
+        <a href="#">Info</a>
+        <a href="#">Program MBKM</a>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="content">
+      <div class="image">
+        <img src="img/Ka-Prodi-1.jpg" alt="Dr. Ayi Purbasari" />
+        <p style="margin-top: 10px; font-weight: bold; text-align: center">Mengenal Lebih Dekat,<br />Prodi Teknik Informatika UNPAS</p>
+      </div>
+      <div class="text">
+        <h1>Tentang Teknik Informatika UNPAS</h1>
+        <p>
+          Teknik Informatika, Fakultas Teknik – Universitas Pasundan, berdiri sejak tahun 1993 merupakan bagian dari keluarga Kampus UNPAS. Selayaknya sebuah institusi pendidikan, tujuan utama prodi Teknik Informatika adalah menjadi wadah
+          kita bersama menimba ilmu dan pendidikan, yang bermanfaat bagi kehidupan diri, keluarga, masyarakat, bangsa dan negara.
+        </p>
+        <p class="quote">“Pendidikan adalah senjata paling mematikan, karena dengan itu Anda dapat mengubah dunia.” - Nelson Mandela</p>
+      </div>
+    </div>
+
+    <!-- Vision Section -->
+    <div class="vision">
+      <div class="card">
+        <h2>Visi Universitas Pasundan</h2>
+        <p>Menjadi Enterpreneurial University yang dijiwai oleh nilai kesundaan dan kesilaman tahun 2037.</p>
+      </div>
+      <div class="card">
+        <h2>Visi Fakultas Teknik</h2>
+        <p>Menjadi Penyelenggara Pendidikan Tinggi yang Inovatif, Unggul dan Berbudaya Entrepreneur serta memiliki jati diri Nilai Kesundaan dan Kesilaman di tahun 2037.</p>
+      </div>
+      <div class="card">
+        <h2>Visi Program Studi</h2>
+        <p>Menjadi penyelenggara pendidikan tinggi informatika yang unggul di bidang computing, dengan mengedepankan kemampuan technopreneurship serta memiliki jati diri keislaman dan kesundaan pada tahun 2037.</p>
+      </div>
+    </div>
+  </body>
+</html>
